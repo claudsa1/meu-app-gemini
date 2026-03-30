@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // output: 'standalone',
+  output: 'standalone',
   transpilePackages: ['motion', '@vis.gl/react-google-maps', 'modern-screenshot', 'jspdf'],
   env: {
     GOOGLE_MAPS_PLATFORM_KEY: process.env.GOOGLE_MAPS_PLATFORM_KEY || '',
