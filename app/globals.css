@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: var(--font-headline);
+  --font-body: var(--font-body);
+  --font-label: var(--font-body);
+  
+  --color-primary: #041627;
+  --color-secondary: #775a19;
+  --color-tertiary: #350000;
+  --color-surface: #fcf9f8;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-highest: #ffffff;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #44474c;
+  --color-outline-variant: #c4c6cd;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface;
+  }
+}
+
+.editorial-shadow {
+  box-shadow: 0 40px 40px -20px rgba(27, 28, 28, 0.06);
+}
